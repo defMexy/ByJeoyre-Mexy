@@ -121,3 +121,70 @@ const sectionObserver = new IntersectionObserver(
 );
 
 sections.forEach(s => sectionObserver.observe(s));
+
+// ── Animated stat counters ────────────────────────────────────────
+const animateCounter = (el) => {
+  const text  = el.textContent.trim();
+  const num   = parseInt(text, 10);
+  const suffix = text.replace(/^\d+/, '');
+  const duration = 1600;
+  const startTime = performance.now();
+
+  const update = (now) => {
+    const progress = Math.min((now - startTime) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.floor(eased * num) + suffix;
+    if (progress < 1) requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+};
+
+const counterObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.6 }
+);
+
+document.querySelectorAll('.stat__num').forEach(el => counterObserver.observe(el));
+
+// ── Hero parallax (background position) ──────────────────────────
+const heroBg  = document.querySelector('.hero__bg');
+const heroEl  = document.querySelector('.hero');
+
+if (heroBg && heroEl) {
+  const onScroll = () => {
+    const scrollY = window.scrollY;
+    if (scrollY <= heroEl.offsetHeight) {
+      const pct = (scrollY / heroEl.offsetHeight) * 40;
+      heroBg.style.backgroundPositionY = `calc(50% + ${pct}px)`;
+    }
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+}
+
+// ── Portfolio touch toggle ────────────────────────────────────────
+document.querySelectorAll('.portfolio-item').forEach(item => {
+  item.addEventListener('touchstart', () => {
+    item.classList.toggle('touched');
+  }, { passive: true });
+});
+
+// ── Section title em underline trigger ───────────────────────────
+const titleObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  },
+  { threshold: 0.3 }
+);
+
+document.querySelectorAll('.section-title').forEach(el => titleObserver.observe(el));
