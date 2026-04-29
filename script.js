@@ -17,20 +17,32 @@ window.addEventListener('scroll', updateNav, { passive: true });
 updateNav();
 
 // ── Mobile nav toggle ─────────────────────────────────────────────
-const navToggle = document.getElementById('navToggle');
-const navLinks  = document.getElementById('navLinks');
+const navToggle   = document.getElementById('navToggle');
+const navLinks    = document.getElementById('navLinks');
+const navBackdrop = document.getElementById('navBackdrop');
+
+const closeNav = () => {
+  navLinks.classList.remove('open');
+  navToggle.classList.remove('open');
+  navToggle.setAttribute('aria-expanded', 'false');
+  navToggle.setAttribute('aria-label', 'Menu openen');
+  if (navBackdrop) navBackdrop.classList.remove('open');
+  document.body.style.overflow = '';
+};
 
 navToggle.addEventListener('click', () => {
   const open = navLinks.classList.toggle('open');
   navToggle.classList.toggle('open', open);
+  navToggle.setAttribute('aria-expanded', String(open));
   navToggle.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+  if (navBackdrop) navBackdrop.classList.toggle('open', open);
+  document.body.style.overflow = open ? 'hidden' : '';
 });
 
+if (navBackdrop) navBackdrop.addEventListener('click', closeNav);
+
 navLinks.querySelectorAll('.nav__link').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    navToggle.classList.remove('open');
-  });
+  link.addEventListener('click', closeNav);
 });
 
 // ── Scroll reveal ─────────────────────────────────────────────────
