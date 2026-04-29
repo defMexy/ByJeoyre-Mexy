@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ByJeoyre — Interieur Fotografie & Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">ByJeoyre</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#over-ons" class="nav__link">Over Ons</a></li>
+        <li><a href="#diensten" class="nav__link">Diensten</a></li>
+        <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+        <li><a href="#werkwijze" class="nav__link">Werkwijze</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">Interieur Fotografie & Design</p>
+      <h1 class="hero__title reveal">
+        Ruimtes die<br />
+        <em>verhalen vertellen</em>
+      </h1>
+      <p class="hero__sub reveal">
+        Wij vangen de ziel van elk interieur in iedere foto —<br class="desktop-break" />
+        en creëren ruimtes die ademen van schoonheid.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#portfolio" class="btn btn--light">Bekijk Portfolio</a>
+        <a href="#contact" class="btn btn--ghost-light">Vraag een Offerte</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee strip -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Interieur Fotografie</span>
+      <span class="dot">·</span>
+      <span>Woonontwerp</span>
+      <span class="dot">·</span>
+      <span>Ruimtelijk Design</span>
+      <span class="dot">·</span>
+      <span>Sfeer & Stijl</span>
+      <span class="dot">·</span>
+      <span>Kleur & Textuur</span>
+      <span class="dot">·</span>
+      <span>Interieur Styling</span>
+      <span class="dot">·</span>
+      <span>Interieur Fotografie</span>
+      <span class="dot">·</span>
+      <span>Woonontwerp</span>
+      <span class="dot">·</span>
+      <span>Ruimtelijk Design</span>
+      <span class="dot">·</span>
+      <span>Sfeer & Stijl</span>
+      <span class="dot">·</span>
+      <span>Kleur & Textuur</span>
+      <span class="dot">·</span>
+      <span>Interieur Styling</span>
+      <span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- Over ons -->
+  <section class="about section" id="over-ons">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__images">
+          <div class="about__img about__img--1 reveal">
+            <div class="img-placeholder img-placeholder--tall" style="background-image: url('https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&q=80')"></div>
+          </div>
+          <div class="about__img about__img--2 reveal delay-1">
+            <div class="img-placeholder img-placeholder--square" style="background-image: url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500&q=80')"></div>
+            <div class="about__badge">
+              <span class="about__badge-num">8+</span>
+              <span class="about__badge-text">Jaar<br/>Ervaring</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="section-eyebrow reveal">Over ByJeoyre</p>
+          <h2 class="section-title reveal">
+            Elk detail vertelt<br /><em>een verhaal</em>
+          </h2>
+          <p class="about__desc reveal delay-1">
+            Bij ByJeoyre geloven wij dat een interieur meer is dan meubels en muren — het is een weerspiegeling van wie je bent. Onze passie is het vastleggen en creëren van ruimtes die zowel functioneel als adembenemend mooi zijn.
+          </p>
+          <p class="about__desc reveal delay-2">
+            Met meer dan acht jaar ervaring in interieur fotografie en design werken we samen met particulieren, architecten en vastgoedontwikkelaars door heel Nederland.
+          </p>
+          <div class="about__stats reveal delay-3">
+            <div class="stat">
+              <span class="stat__num">320+</span>
+              <span class="stat__label">Projecten</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">190+</span>
+              <span class="stat__label">Tevreden Klanten</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">15+</span>
+              <span class="stat__label">Awards</span>
+            </div>
+          </div>
+          <a href="#diensten" class="btn btn--dark reveal delay-4">Onze Diensten</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diensten -->
+  <section class="services section section--alt" id="diensten">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Wat Wij Doen</p>
+        <h2 class="section-title">Onze <em>Diensten</em></h2>
+        <p class="section-sub">Van conceptfoto tot complete interieurinrichting — wij begeleiden je in elk stadium.</p>
+      </div>
+      <div class="services__grid">
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="6" y="10" width="36" height="28" rx="4" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="38" cy="14" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Interieur Fotografie</h3>
+          <p class="service-card__desc">
+            Professionele fotoshoot van uw interieur met oog voor licht, compositie en sfeer. Ideaal voor vastgoedverkoop, tijdschriften en social media.
+          </p>
+          <ul class="service-card__list">
+            <li>Woningfotografie</li>
+            <li>Commerciële ruimtes</li>
+            <li>Editorial shoots</li>
+            <li>360° fotografie</li>
+          </ul>
+          <a href="#contact" class="service-card__link">Meer informatie →</a>
+        </div>
+        <div class="service-card service-card--featured reveal delay-1">
+          <div class="service-card__badge">Populairste Keuze</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 38L18 20L26 30L32 22L42 38H6Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M8 12H16M12 8V16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M34 10L38 14M38 10L34 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Interieur Design</h3>
+          <p class="service-card__desc">
+            Van concept tot realisatie ontwerpen wij interieur op maat. Wij combineren esthetiek en functionaliteit voor een resultaat dat u elke dag blij maakt.
+          </p>
+          <ul class="service-card__list">
+            <li>Interieur op maat</li>
+            <li>Kleuradvies</li>
+            <li>Meubelstoffering</li>
+            <li>Projectbegeleiding</li>
+          </ul>
+          <a href="#contact" class="service-card__link">Meer informatie →</a>
+        </div>
+        <div class="service-card reveal delay-2">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="26" y="8" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="8" y="26" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="26" y="26" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Interieur Styling</h3>
+          <p class="service-card__desc">
+            Wij stylen uw ruimte voor een fotoshoot of voor dagelijks gebruik. Met kleine ingrepen en de juiste accessoires transformeren wij uw woning.
+          </p>
+          <ul class="service-card__list">
+            <li>Ruimtestyling</li>
+            <li>Accessoires selectie</li>
+            <li>Home staging</li>
+            <li>Seizoensstyling</li>
+          </ul>
+          <a href="#contact" class="service-card__link">Meer informatie →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Ons Werk</p>
+        <h2 class="section-title">Geselecteerd <em>Portfolio</em></h2>
+      </div>
+      <div class="portfolio__filters reveal">
+        <button class="filter-btn filter-btn--active" data-filter="all">Alles</button>
+        <button class="filter-btn" data-filter="fotografie">Fotografie</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="styling">Styling</button>
+      </div>
+      <div class="portfolio__grid">
+        <div class="portfolio-item reveal" data-cat="fotografie">
+          <div class="portfolio-item__img" style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=700&q=80')"></div>
+          <div class="portfolio-item__overlay">
+            <span class="portfolio-item__cat">Fotografie</span>
+            <h4 class="portfolio-item__title">Villa Amsterdam</h4>
+          </div>
+        </div>
+        <div class="portfolio-item portfolio-item--tall reveal delay-1" data-cat="design">
+          <div class="portfolio-item__img" style="background-image: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=700&q=80')"></div>
+          <div class="portfolio-item__overlay">
+            <span class="portfolio-item__cat">Design</span>
+            <h4 class="portfolio-item__title">Penthouse Utrecht</h4>
+          </div>
+        </div>
+        <div class="portfolio-item reveal delay-2" data-cat="styling">
+          <div class="portfolio-item__img" style="background-image: url('https://images.unsplash.com/photo-1567538096621-38d2284b23ff?w=700&q=80')"></div>
+          <div class="portfolio-item__overlay">
+            <span class="portfolio-item__cat">Styling</span>
+            <h4 class="portfolio-item__title">Stadsappartement Den Haag</h4>
+          </div>
+        </div>
+        <div class="portfolio-item reveal delay-1" data-cat="fotografie">
+          <div class="portfolio-item__img" style="background-image: url('https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=700&q=80')"></div>
+          <div class="portfolio-item__overlay">
+            <span class="portfolio-item__cat">Fotografie</span>
+            <h4 class="portfolio-item__title">Loft Rotterdam</h4>
+          </div>
+        </div>
+        <div class="portfolio-item portfolio-item--wide reveal delay-2" data-cat="design">
+          <div class="portfolio-item__img" style="background-image: url('https://images.unsplash.com/photo-1615529328331-f8917597711f?w=1000&q=80')"></div>
+          <div class="portfolio-item__overlay">
+            <span class="portfolio-item__cat">Design</span>
+            <h4 class="portfolio-item__title">Landgoed Gelderland</h4>
+          </div>
+        </div>
+        <div class="portfolio-item reveal delay-3" data-cat="styling">
+          <div class="portfolio-item__img" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=700&q=80')"></div>
+          <div class="portfolio-item__overlay">
+            <span class="portfolio-item__cat">Styling</span>
+            <h4 class="portfolio-item__title">Townhouse Haarlem</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Werkwijze -->
+  <section class="process section section--alt" id="werkwijze">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Hoe Wij Werken</p>
+        <h2 class="section-title">Ons <em>Proces</em></h2>
+        <p class="section-sub">Van het eerste gesprek tot het eindresultaat begeleiden wij u stap voor stap.</p>
+      </div>
+      <div class="process__steps">
+        <div class="process-step reveal">
+          <div class="process-step__num">01</div>
+          <div class="process-step__content">
+            <h3 class="process-step__title">Kennismaking</h3>
+            <p class="process-step__desc">We beginnen altijd met een persoonlijk gesprek om uw wensen, stijl en budget te begrijpen. Dit kan bij u thuis of via video-call.</p>
+          </div>
+        </div>
+        <div class="process-step reveal delay-1">
+          <div class="process-step__num">02</div>
+          <div class="process-step__content">
+            <h3 class="process-step__title">Concept & Offerte</h3>
+            <p class="process-step__desc">Op basis van het gesprek stellen wij een moodboard en een gedetailleerde offerte op. Geen verborgen kosten — volledig transparant.</p>
+          </div>
+        </div>
+        <div class="process-step reveal delay-2">
+          <div class="process-step__num">03</div>
+          <div class="process-step__content">
+            <h3 class="process-step__title">Realisatie</h3>
+            <p class="process-step__desc">Ons team voert het project uit met maximale zorg en aandacht voor detail. U wordt gedurende het hele proces op de hoogte gehouden.</p>
+          </div>
+        </div>
+        <div class="process-step reveal delay-3">
+          <div class="process-step__num">04</div>
+          <div class="process-step__content">
+            <h3 class="process-step__title">Oplevering</h3>
+            <p class="process-step__desc">Het eindresultaat wordt met u doorgenomen. Pas wanneer u 100% tevreden bent, sluiten wij het project af.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Wat Klanten Zeggen</p>
+        <h2 class="section-title">Ervaringen & <em>Reviews</em></h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial reveal">
+          <div class="testimonial__stars">★★★★★</div>
+          <blockquote class="testimonial__quote">
+            "ByJeoyre heeft onze woonkamer volledig getransformeerd. De foto's die zij daarna maakten waren zo mooi dat we ze allemaal hebben ingelijst. Absolute aanrader!"
+          </blockquote>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar" style="background: #C9A96E; display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Playfair Display',serif;font-size:1.1rem;">S</div>
+            <div>
+              <strong>Sophie van der Berg</strong>
+              <span>Amsterdam</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial reveal delay-1">
+          <div class="testimonial__stars">★★★★★</div>
+          <blockquote class="testimonial__quote">
+            "Professioneel, creatief en altijd bereikbaar. Het interieur dat zij voor ons kantoor hebben ontworpen overtrof al onze verwachtingen. Een echte eye-opener."
+          </blockquote>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar" style="background: #8B7355; display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Playfair Display',serif;font-size:1.1rem;">M</div>
+            <div>
+              <strong>Matthias Jansen</strong>
+              <span>Rotterdam</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial reveal delay-2">
+          <div class="testimonial__stars">★★★★★</div>
+          <blockquote class="testimonial__quote">
+            "Van het eerste contact tot de oplevering was alles perfect georganiseerd. Onze villa ziet er nu uit als een pagina uit een woonmagazine. Dankjewel ByJeoyre!"
+          </blockquote>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar" style="background: #2C2417; display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Playfair Display',serif;font-size:1.1rem;">L</div>
+            <div>
+              <strong>Lena de Vries</strong>
+              <span>Utrecht</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="cta-banner__bg"></div>
+    <div class="cta-banner__overlay"></div>
+    <div class="cta-banner__content reveal">
+      <p class="section-eyebrow" style="color: rgba(255,255,255,0.7);">Klaar om te beginnen?</p>
+      <h2 class="cta-banner__title">Laat ons uw ruimte<br /><em>tot leven brengen</em></h2>
+      <a href="#contact" class="btn btn--light">Neem Contact Op</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <p class="section-eyebrow reveal">Neem Contact Op</p>
+          <h2 class="section-title reveal">Laten we <em>kennismaken</em></h2>
+          <p class="contact__desc reveal delay-1">
+            Heeft u een project in gedachten? Wij horen graag van u. Stuur ons een bericht en we nemen binnen 24 uur contact op.
+          </p>
+          <div class="contact__details reveal delay-2">
+            <div class="contact__detail">
+              <div class="contact__detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div>
+                <span>E-mail</span>
+                <a href="mailto:hello@byjeoyre.nl">hello@byjeoyre.nl</a>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <div>
+                <span>Telefoon</span>
+                <a href="tel:+31201234567">+31 (0)20 123 45 67</a>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <span>Locatie</span>
+                <span>Amsterdam, Nederland</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact__social reveal delay-3">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.236 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.181-.78 1.172-4.97 1.172-4.97s-.299-.598-.299-1.482c0-1.388.806-2.428 1.808-2.428.853 0 1.267.641 1.267 1.408 0 .858-.546 2.141-.828 3.33-.236.995.499 1.806 1.476 1.806 1.772 0 3.137-1.867 3.137-4.561 0-2.386-1.715-4.054-4.163-4.054-2.837 0-4.5 2.128-4.5 4.327 0 .857.33 1.776.741 2.279.081.099.093.185.069.285-.076.308-.243.995-.276 1.134-.044.183-.146.222-.337.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.967-.527-2.292-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="contact__form-wrap reveal delay-1">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Naam</label>
+                <input type="text" id="name" name="name" placeholder="Uw volledige naam" required />
+              </div>
+              <div class="form-group">
+                <label for="email">E-mailadres</label>
+                <input type="email" id="email" name="email" placeholder="uw@email.nl" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Dienst</label>
+              <select id="service" name="service">
+                <option value="">Selecteer een dienst</option>
+                <option value="fotografie">Interieur Fotografie</option>
+                <option value="design">Interieur Design</option>
+                <option value="styling">Interieur Styling</option>
+                <option value="anders">Anders</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Bericht</label>
+              <textarea id="message" name="message" rows="5" placeholder="Vertel ons over uw project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--dark btn--full">Verstuur Bericht</button>
+            <p class="form-note">Wij reageren binnen 24 uur.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo">ByJeoyre</a>
+          <p class="footer__tagline">Interieur Fotografie & Design<br />vanuit Amsterdam, voor heel Nederland.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Navigatie</h4>
+            <ul>
+              <li><a href="#over-ons">Over Ons</a></li>
+              <li><a href="#diensten">Diensten</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#werkwijze">Werkwijze</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Diensten</h4>
+            <ul>
+              <li><a href="#diensten">Interieur Fotografie</a></li>
+              <li><a href="#diensten">Interieur Design</a></li>
+              <li><a href="#diensten">Interieur Styling</a></li>
+              <li><a href="#contact">Offerte Aanvragen</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="mailto:hello@byjeoyre.nl">hello@byjeoyre.nl</a></li>
+              <li><a href="tel:+31201234567">+31 (0)20 123 45 67</a></li>
+              <li><span>Amsterdam, Nederland</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 ByJeoyre. Alle rechten voorbehouden.</p>
+        <div class="footer__legal">
+          <a href="#">Privacybeleid</a>
+          <a href="#">Algemene Voorwaarden</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
